@@ -1,0 +1,25 @@
+
+/////////////////////////////////
+||||| Pour Azeroth ! 🔥 |||||||
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+EXERCICE SQL #1
+[Prérequis : installation effectuée de votre serveur + client SQL et configuration de l'encodage]
+
+
+La base de données contient des informations sur :
+
+    - Les personnages crées par les joueurs 
+    - Les races jouables
+    - Les classes (de compétences) jouables
+    - Les factions jouables
+    - Les guildes crées par des joueurs
+    - Les royaumes (serveurs)
+    - Les zones des royaumes
+    - Les types des royaumes
+    - Les niveaux de population de joueurs des royaumes
+    - Les objets intégrés au jeu
+    - Les objets que possèdent tous les personnages*
+
+
+>> SOURCE C:/Users/hp/Desktop/VS_CODE/Exercices_programmation/exercices-sql/Infos_base/wow_data_v1.sql

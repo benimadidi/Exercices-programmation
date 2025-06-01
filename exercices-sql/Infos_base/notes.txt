@@ -22,4 +22,4 @@ La base de données contient des informations sur :
     - Les objets que possèdent tous les personnages*
 
 
->> SOURCE C:/Users/hp/Desktop/VS_CODE/Exercices_programmation/exercices-sql/Infos_base/wow_data_v1.sql
+>> SOURCE C:/Users/hp/Desktop/Vs_code/Exercices_prog/exercices-sql/Infos_base/wow_data_v1.sql

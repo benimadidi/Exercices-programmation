@@ -1,0 +1,72 @@
+<!--
+PATIENT
+    > Nom, Prenom, Sexe
+    > Date et lieu de naissance
+        Addresse, code postal, ville
+        Date et lieu de naissance
+    > Infos complementaires (facultatif)
+    -->
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire de saisie d'un patient</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="" method="post">
+            <fieldset>
+                <legend>CIVILITE</legend>
+
+                <p>
+                    <label for="nom_patient">* Nom :</label>
+                    <input name="nom" id="nom_patient" type="text" required> 
+                    
+                    <label for="prenom_patient">* Prenom :</label>
+                    <input name="prenom" id="prenom_patient" type="text" required> <br><br>
+
+                    <label for="genre">* Sexe :</label>
+                    <input name="sexe" id="genre" type="radio" value="homme" required>Homme
+                    <input  name="sexe" id="genre" type="radio" value="femme" required>Femme
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>NAISSANCE ET LIEU DE RESIDENCE</legend>
+            
+                <p>
+                    <label for="addresse">* Addresse :</label>
+                    <input type="text" name="address" id="addresse" required> <br>
+
+                    <label for="code_postal">* Code postal :</label>
+                    <input type="text" name="postal_code" id="code_postal" size="6" required>
+
+                    <label for="ville">* Ville :</label>
+                    <input type="text" name="city" id="ville" required> <br><br>
+                </p>
+                
+                <p>
+                    <label for="date_naissance">* Date de naissance :</label>
+                    <input type="date" name="birth_date" id="date_naissance" required>
+
+                    <label for="lieu_naissance">* Lieu de naissance :</label>
+                    <input type="text" name="birth_place" id="lieu_naissance" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>DIVERS</legend>
+
+                <p>Informations complementaires : <br>
+                    <textarea rows="7" cols="50" maxlength="5000" wrap="hard" placeholder="Donner des infos complementaires..."></textarea>
+                </p>
+            </fieldset>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Effacer">
+        </form>
+        
+    </body>
+</html>

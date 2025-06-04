@@ -1,0 +1,32 @@
+
+body{
+    margin: auto;
+    width: 500px;
+    background-color: #DDD;
+}
+h1{
+    padding-left: 3rem ;
+    text-align: center;
+}
+div{
+    padding-left: 80px;
+    padding-top: 25px;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{
+    padding: 3px;
+    border: 2px solid black;
+}
+th{
+    background-color: #75b5f1a9;
+}
+
+.col{
+    background-color: #75b5f1a9;
+}
+.line{
+    font-weight: bold;
+}

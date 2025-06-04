@@ -1,0 +1,62 @@
+<!-- 
+https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css : un site pour les icones
+-->
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML/CSS - exercice n°6</title>
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <nav class="navbar">
+                <a href="#" class="logo">Logo</a>
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="content">
+                <div class="info">
+                    <h1>Conception & Developpement Web</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ratione harum quis quia modi pariatur perferendis tempore molestiae nam cumque! Minus tenetur, quo iure vero aspernatur sunt omnis quas ex!</p>
+                    <a href="" class="btn">Rejoignez-nous</a>
+                </div>
+
+                <div class="login-wrapper">
+                    <div class="login-box">
+                        <form method="post" action="">
+                            <h1>Connexion</h1>   
+                            <div class="input-box">
+                                <input type="text" placeholder="Nom d'utilisateur" required>
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Mot de passe" required>
+                                <i class='bx bxs-lock-alt'></i>
+                    
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">Se souvenir de moi</label>
+                                <a href="#">Mot de passe oublié ?</a>
+                            </div>
+                            <button type="submit" class="btn">Connexion</button>
+                            <div class="register-link">
+                                <p>Vous n'avez pas de compte ?</p>
+                                <a href="#">S'inscrire</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

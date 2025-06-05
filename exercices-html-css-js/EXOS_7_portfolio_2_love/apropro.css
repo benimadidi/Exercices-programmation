@@ -1,0 +1,278 @@
+
+/* Initialisation des données CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swa');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    border: none;
+    outline:  none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Mon thème de base*/
+/* :root {
+    --text-main: #F0F0F5;
+    --text-hover: #FFD369;
+    --second-bg-color: #1e1e1e;  
+    --bg-color: #121212;   
+} */
+
+/*Palette Bleutée #1 — Moderne & Élégante*/
+/* :root{
+    --text-main: #E0F7FA;     
+    --text-hover: #00BCD4;      
+    --second-bg-color: #1A1C2C; 
+    --bg-color: #12131A;  
+} */
+
+/*Palette Verte – Nature & Fraîcheur*/
+:root {
+  --text-main: #E8F5E9;
+  --text-hover: #81C784;
+  --second-bg-color: #1B3B2F;
+  --bg-color: #10241B;
+}
+
+/*Palette Orange / Chaude – Énergie & Dynamisme*/
+/* :root {
+  --text-main: #FFF3E0;
+  --text-hover: #FFB74D;
+  --second-bg-color: #2E1F0E;
+  --bg-color: #1B1309;
+} */
+
+/*Palette Rose / Violet – Douceur & Créativité*/
+/* :root {
+  --text-main: #FCE4EC;
+  --text-hover: #F48FB1;
+  --second-bg-color: #2C1E2E;
+  --bg-color: #1A101A;
+} */
+
+/*Palette Grise / Neutre – Pro / Minimaliste*/
+/* :root {
+  --text-main: #F5F5F5;
+  --text-hover: #BDBDBD;
+  --second-bg-color: #2A2A2A;
+  --bg-color: #121212;
+} */
+
+/*Palette Cyberpunk – Néon & Moderne*/
+/* :root {
+  --text-main: #E0F7FA;
+  --text-hover: #FF00FF;
+  --second-bg-color: #1A0026;
+  --bg-color: #0A0014;
+} */
+
+/* Palette Soleil d’été — Jaune & Chaud, doux mais lumineux*/
+/* :root {
+  --text-main: #FFF9E3;
+  --text-hover: #FFD54F;
+  --second-bg-color: #3E2C1C;
+  --bg-color: #1E140A;
+} */
+
+/* Palette Automne — Orange profond & brun chaleureux*/
+/* :root {
+  --text-main: #FFEAD6;
+  --text-hover: #FF7043;
+  --second-bg-color: #3B1F13;
+  --bg-color: #1A0D07;
+} */
+
+/* Palette Tech / Futuriste — Bleu néon + Vert acide*/
+/* :root {
+  --text-main: #D9FDFB;
+  --text-hover: #00FFAB;
+  --second-bg-color: #0A1F2E;
+  --bg-color: #050C13;
+} */
+
+/*Palette Noir & Blanc — Minimaliste & Élégante*/
+:root {
+  --text-main: #F5F5F5;       
+  --text-hover: #FFFFFF;      
+  --second-bg-color: #1E1E1E; 
+  --bg-color: #121212;          
+}
+
+/*Palette Blanc & Noir — Minimaliste & Élégante*/
+:root {
+  --text-main: #121212;         
+  --text-hover: #000000;      
+  --second-bg-color: #F0F0F0; 
+  --bg-color: #FFFFFF;       
+}
+
+html{
+    font-size : 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--second-bg-color);
+    color: var(--text-main);
+} 
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*Header*/
+
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:  var(--text-main);
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-main) ;
+    margin-left: 4.5rem;
+    transition: .3s ease;
+}
+
+.navbar a:hover, .navbar .active{
+    color: var(--text-hover);
+}
+
+#burger-icon{
+    display: none;
+    font-size: 3.6rem;
+    color: var(--burger-bg);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*A propos*/
+article{
+    background-color: var(--bg-color);
+    overflow: hidden;
+    box-shadow: 0 0 1rem var(--bg-color);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.about .left-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about .right-article{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    gap: 2rem;
+}
+
+.about-content{
+    margin-left: 2rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.about-content p{
+    font-size: 1.8rem;
+    margin: 2rem 0 3rem;
+}
+
+span{
+    color: var(--text-hover);
+    font-weight: 600;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .1rem;
+    font-size: 1.5rem;
+    padding: 2rem 9%;
+    color: var(--bg-color);
+    background-color: var(--text-main);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Responsive */
+@media screen and (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .header{
+        padding: 2rem 3%;
+    }
+
+    .about {
+        padding: 10% 3% 2rem;
+    }
+
+    .footer{
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        position: relative;
+        z-index: 2000;
+    }
+
+    #burger-icon{
+        display: block;
+    }
+
+    .navbar{
+       position: absolute;
+       top: 100%;
+       left: 0;
+       width: 100%;
+       padding: 1rem 3% ;
+       background-color: var(--bg-color);
+       border-top: .1rem solid rgba(0, 0, 0, .2);
+       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+       display: none;
+    }
+
+    .navbar.active{
+        display: block;
+        z-index: 2100;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .about .left-article, .about .right-article{
+        flex-direction: column-reverse;
+    }
+
+}
+

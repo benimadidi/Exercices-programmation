@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Me Contacter</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="contacts.css">
+
+        <!-- Icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>       
+   
+    </head>
+
+    <body> 
+
+        <!-- Section du header -->
+        <header class="header">
+
+            <h1 class="logo">Me contacter</h1>
+
+            <i class='bx bx-menu' id="burger-icon"></i>
+        
+            <nav class="navbar">
+                <a href="index.html">Accueil</a>
+                <a href="A_propo.html">A propos</a>
+                <a href="Competences.html" >Compétences</a>
+                <a href="#Contacts" class="active">Contacts</a>
+            </nav>
+
+        </header>
+        
+        <!-- Section des contacts -->
+        <section class="contact">
+
+            <div class="something">
+                <h2 class="contact-title">Contacts</h2>
+
+                <div class="my-info">
+                    <p>Numéro de Téléphone: <a href="tel:+243896270540" title="Mon Numéro de Telephone">+243896270540</a></p>
+                    <p>Email : <a href="mailto: nzolalove435@gmail.com" title="Mon adresse mail">nzolalove435@gmail.com</a></p>
+                </div>
+
+                <h2 class="contact-mail">M'envoyer un <span>mail</span> !</h2>
+            </div>
+
+            <form action="#" method="post">
+
+                <div class="input-box">
+                    <input type="text" name="name" id="user_name" placeholder="Votre nom..." required>
+                    <input type="email" name="email" placeholder="Votre email..." required>
+                </div>
+
+                <textarea name="message" rows="10" cols="30" placeholder="Votre message..." required></textarea>
+                <input type="submit" class="btn" value="Envoyer">
+
+            </form>
+
+        </section>
+
+        <!-- Section du footer -->
+        <footer class="footer">
+            Copyright &copy; 2025 | Love Nzola | Tous droits reservés 
+        </footer>
+
+        <!-- Script -->
+        <script src="script.js"></script>
+    </body>
+</html>

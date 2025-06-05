@@ -20,20 +20,20 @@
 } */
 
 /*Palette Bleutée #1 — Moderne & Élégante*/
-/* :root{
+:root{
     --text-main: #E0F7FA;     
     --text-hover: #00BCD4;      
     --second-bg-color: #1A1C2C; 
     --bg-color: #12131A;  
-} */
+}
 
 /*Palette Verte – Nature & Fraîcheur*/
-:root {
+/* :root {
   --text-main: #E8F5E9;
   --text-hover: #81C784;
   --second-bg-color: #1B3B2F;
   --bg-color: #10241B;
-}
+} */
 
 /*Palette Orange / Chaude – Énergie & Dynamisme*/
 /* :root {
@@ -92,20 +92,20 @@
 } */
 
 /*Palette Noir & Blanc — Minimaliste & Élégante*/
-:root {
+/* :root {
   --text-main: #F5F5F5;       
   --text-hover: #FFFFFF;      
   --second-bg-color: #1E1E1E; 
   --bg-color: #121212;          
-}
+} */
 
 /*Palette Blanc & Noir — Minimaliste & Élégante*/
-:root {
+/* :root {
   --text-main: #121212;         
   --text-hover: #000000;      
   --second-bg-color: #F0F0F0; 
   --bg-color: #FFFFFF;       
-}
+} */
 
 html{
     font-size : 62.5%;

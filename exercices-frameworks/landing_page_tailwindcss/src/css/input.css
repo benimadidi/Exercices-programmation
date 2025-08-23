@@ -1,3 +1,36 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* 
+    @theme : permet de personnaliser tailwindcss
+    @layer : permet de personnaliser tailwindcss
+        @layer base : permet de personnaliser la base de tailwindcss
+        @layer components : permet de personnaliser les composants de tailwindcss ou d'en créer de nouveaux
+    @utility : permet de personnaliser les utilitaires de tailwindcss
+    @apply : permet de personnaliser avec les composants de tailwindcss
+*/
+@theme {
+  --font-merriweather: "Merriweather", serif;
+  --font-poppins: "Poppins", sans-serif;
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@layer base{
+    a{
+        text-decoration: underline;
+        color: blue;
+    }
+}
+
+@layer components{
+    .btn{
+        @apply text-white bg-orange-500 px-14 py-4 rounded-lg hover:bg-black duration-500 cursor-pointer mx-auto block mt-10 lg:mt-4 mb-3.5
+    }
+}
+
+@utility flex-centered{
+    @apply flex justify-center items-center
+}

@@ -24,7 +24,7 @@ const Navbar = () => {
                 <a href="#Header" className='cursor-pointer hover:text-gray-400'>Acceuil</a>
                 <a href="#About" className='cursor-pointer hover:text-gray-400'>À propos</a>
                 <a href="#Projects" className='cursor-pointer hover:text-gray-400'>Projets</a>
-                <a href="#Testimonials" className='cursor-pointer hover:text-gray-400'>Avis</a>
+                <a href="#Testimonials" className='cursor-pointer hover:text-gray-400'>Témoignages</a>
             </ul>
             <button className='hidden md:block bg-white px-8 py-2 rounded-full'>S'inscrire</button>
             <img  onClick={() => setShowMobileMenu(true)} src={assets.menu_icon} className='md:hidden w-7 cursor-pointer' alt="" />
@@ -38,7 +38,7 @@ const Navbar = () => {
                 <a onClick={() => setShowMobileMenu(false)} href="#Header" className="px-4 py-2 rounded-full inline-block">Acceuil</a>
                 <a onClick={() => setShowMobileMenu(false)} href="#About" className="px-4 py-2 rounded-full inline-block">À propos</a>
                 <a onClick={() => setShowMobileMenu(false)} href="#Projects" className="px-4 py-2 rounded-full inline-block">Projets</a>
-                <a onClick={() => setShowMobileMenu(false)} href="#Testimonials" className="px-4 py-2 rounded-full inline-block">Avis</a>
+                <a onClick={() => setShowMobileMenu(false)} href="#Testimonials" className="px-4 py-2 rounded-full inline-block">Témoignages</a>
             </ul>
         </div>
     </div>

@@ -76,26 +76,26 @@ export const projectsData = [
   export const testimonialsData = [
     {
         name: "Donald Jackman",
-        title: "Marketing Manager",
+        title: "Responsable marketing",
         image: profile_img_1,
-        alt: "Portrait of Donald Jackman",
+        alt: "Portrait de Donald Jackman",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "Dès la première rencontre, ils ont compris ma vision et m'ont aidé à trouver le bien idéal. Leur souci du détail et leur engagement envers la satisfaction client sont incomparables."
     },
     {
         name: "Richard Nelson",
         title: "UI/UX Designer",
         image: profile_img_2,
-        alt: "Portrait of Richard Nelson",
+        alt: "Portrait de Richard Nelson",
         rating: 4,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "Dès la première rencontre, ils ont compris ma vision et m'ont aidé à trouver le bien idéal. Leur souci du détail et leur engagement envers la satisfaction client sont incomparables."
     },
     {
         name: "James Washington",
-        title: "Co-Founder",
+        title: "Co-fondateur",
         image: profile_img_3,
-        alt: "Portrait of James Washington",
+        alt: "Portrait de James Washington",
         rating: 5,
-        text: "From the very first meeting, they understood my vision and helped me find the perfect property. Their attention to detail and commitment to client satisfaction is unmatched."
+        text: "Dès la première rencontre, ils ont compris ma vision et m'ont aidé à trouver le bien idéal. Leur souci du détail et leur engagement envers la satisfaction client sont incomparables."
     }
 ];

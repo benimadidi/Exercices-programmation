@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-gray-08: #141414;
+  --color-gray-10: #1a1a1a;
+  --color-gray-15: #262626;
+  --color-gray-20: #333333;
+  --color-gray-30: #4d4d4d;
+  --color-gray-60: #999999;
+
+  --font-urbanist: "Urbanist", sans-serif;
+}
+
+body{
+  @apply bg-gray-08 text-gray-60 font-urbanist
+}
+
+@layer utilities{
+  .container{
+    @apply px-4 mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1130px] 2xl:max-w-[1340px];
+  }
+
+  p{
+     @apply text-sm sm:text-base md:text-lg
+  }
+
+  button{
+    @apply cursor-pointer
+  }
+
+  .section{
+    @apply pt-20 md:pt-[100px] lg:mt-32
+  }
+
+  h1,h2,h3,h4{
+    @apply font-semibold leading-tight text-balance
+  }
+
+  h2{
+    @apply text-3xl text-white
+  }
+
+  h4{
+    @apply text-xl font-semibold text-white
+  }
+}
+
+@layer components{
+  .primary-btn{
+    @apply bg-gray-08 ring ring-gray-20 px-6 py-3 rounded-md block hover:text-gray-50 hover:bg-gray-20 transition
+  }
+
+  .secondary-btn{
+    @apply bg-purple-600 ring ring-gray-20 px-6 py-3 rounded-md block hover:text-gray-50 hover:bg-purple-600/85 transition text-white
+  }
+}
+
+.navbar {
+  @apply lg:hidden fixed top-0 left-0 bg-gray-10/85 w-full h-screen flex items-center justify-center flex-col backdrop-blur-lg -translate-y-full transition-transform z-40
+}
+.navbar.active {
+  @apply translate-y-0
+}
+
+

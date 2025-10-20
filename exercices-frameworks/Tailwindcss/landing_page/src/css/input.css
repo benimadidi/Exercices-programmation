@@ -8,6 +8,7 @@
     @layer : permet de personnaliser tailwindcss
         @layer base : permet de personnaliser la base de tailwindcss
         @layer components : permet de personnaliser les composants de tailwindcss ou d'en créer de nouveaux
+        @layer utilities : permet de personnaliser les utilitaires de tailwindcss
     @utility : permet de personnaliser les utilitaires de tailwindcss
     @apply : permet de personnaliser avec les composants de tailwindcss
 */

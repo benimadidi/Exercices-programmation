@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import Cards from './components/Cards'
+import Featured from './components/Featured'
 
 
 const App = () => {
@@ -9,6 +11,8 @@ const App = () => {
       <Header />
       <main>
         <Hero />
+        <Cards />
+        <Featured />
       </main>
 
     </>

@@ -95,7 +95,7 @@ export const featuredItems = [
     id: 2,
     img: "/images/prop-2.png",
     title: "Havre métropolitain",
-    text: "Un appartement chic et entièrement meublé de 2 chambres avec vue panoramique sur la ville...",
+    text: "Un appartement chic et entièrement meublé de 2 chambres avec vue panoramique sur ...",
     icons: [
       {
         icon: "/images/prop-icon-1.svg",
@@ -116,7 +116,7 @@ export const featuredItems = [
     id: 3,
     img: "/images/prop-3.png",
     title: "Chalet de retraite rustique",
-    text: "Une élégante maison de ville de 3 chambres et 2,5 salles de bains dans une communauté fermée...",
+    text: "Une élégante maison de ville de 3 chambres et 2,5 salles de bains dans une communauté...",
     icons: [
       {
         icon: "/images/prop-icon-1.svg",
@@ -137,7 +137,7 @@ export const featuredItems = [
     id: 4,
     img: "/images/prop-4.png",
     title: "Cabane de luxe au bord du lac",
-    text: "Cabine moderne de 5 chambres et 4 salles de bains avec vue sur le lac et fonctionnalités de maison intelligente...",
+    text: "Cabine moderne de 5 chambres et 4 salles de bains avec vue sur le lac et fonctionnalités...",
     icons: [
       {
         icon: "/images/prop-icon-1.svg",
@@ -149,7 +149,7 @@ export const featuredItems = [
       },
       {
         icon: "/images/prop-icon-3.svg",
-        label: "Cabine",
+        label: "bois",
       },
     ],
     price: 750000,
@@ -158,11 +158,11 @@ export const featuredItems = [
     id: 5,
     img: "/images/prop-5.png",
     title: "Loft Urban Edge",
-    text: "Loft élégant d'une chambre au cœur du centre-ville avec des éléments de design industriel...",
+    text: "Loft élégant d'une chambre au cœur du centre-ville avec des éléments de design...",
     icons: [
       {
         icon: "/images/prop-icon-1.svg",
-        label: "1-Chambres",
+        label: "1-Chambre",
       },
       {
         icon: "/images/prop-icon-2.svg",
@@ -179,7 +179,7 @@ export const featuredItems = [
     id: 6,
     img: "/images/prop-6.png",
     title: "Maison familiale à la campagne",
-    text: "Spacieuse maison de 4 chambres et 3 salles de bains avec une grande cour arrière et un espace jardin...",
+    text: "Spacieuse maison de 4 chambres et 3 salles de bains avec une grande cour arrière et un...",
     icons: [
       {
         icon: "/images/prop-icon-1.svg",
@@ -191,7 +191,7 @@ export const featuredItems = [
       },
       {
         icon: "/images/prop-icon-3.svg",
-        label: "Maison",
+        label: "Mai..",
       },
     ],
     price: 495000,

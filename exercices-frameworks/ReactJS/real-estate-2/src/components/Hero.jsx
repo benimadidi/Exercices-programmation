@@ -37,18 +37,18 @@ const Hero = () => {
             {/* banniere */}
             <figure className='relative'>
                 <img src="/images/hero-banner.png" alt="" width={690} height={622} className='w-full h-full object-cover'/>
-            </figure>
 
-            {/* texte animé */}
-            <div className="absolute max-lg:-bottom-16 max-lg:left-1/2 max-lg:-translate-x-1/2 bg-gray-08 rounded-full p-2.5 aspect-square ring ring-gray-15">
-                <div className='relative'>
-                    <img src="images/text-shape.svg" alt="" className='w-[106px] h-[106px]' />
+                {/* texte animé */}
+                <div className="absolute max-lg:-bottom-16 max-lg:left-1/2 max-lg:-translate-x-1/2 lg:top-10 lg:-left-16 bg-gray-08 rounded-full p-2.5 aspect-square ring ring-gray-15">
+                    <div className='relative'>
+                        <img src="images/text-shape.svg" alt="" width={106} height={106} className='text-shape' />
 
-                    <button className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-gray-10 w-14 h-14 flex items-center justify-center ring ring-gray-15 rounded-full hover:text-white transition'>
-                        <RiArrowRightUpLongLine size={24}/>
-                    </button>
+                        <button className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-gray-10 w-14 h-14 flex items-center justify-center ring ring-gray-15 rounded-full hover:text-white transition'>
+                            <RiArrowRightUpLongLine size={24}/>
+                        </button>
+                    </div>
                 </div>
-            </div>
+            </figure>
         </div>
     </section>
   )

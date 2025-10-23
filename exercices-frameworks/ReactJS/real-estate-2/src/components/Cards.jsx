@@ -6,7 +6,7 @@ import { fadeInUp, staggerContainer } from '../motion/animation'
 
 const Cards = () => {
   return (
-    <section>
+    <section id='about'>
         <motion.div
             variants={staggerContainer} 
             initial= 'hidden'

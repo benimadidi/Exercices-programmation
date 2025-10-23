@@ -12,7 +12,7 @@ import { fadeIn, staggerContainer } from '../motion/animation'
 
 const Featured = () => {
   return (
-    <section className='section'>
+    <section className='section' id='properties'>
         <motion.div 
             variants={staggerContainer} 
             initial= 'hidden'

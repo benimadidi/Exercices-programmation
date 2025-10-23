@@ -6,7 +6,7 @@ import { fadeInUp, staggerContainer } from '../motion/animation'
 
 const HowItWorks = () => {
   return (
-    <section className='section'>
+    <section className='section' id='services'>
         <motion.div 
             variants={staggerContainer} 
             initial= 'hidden'

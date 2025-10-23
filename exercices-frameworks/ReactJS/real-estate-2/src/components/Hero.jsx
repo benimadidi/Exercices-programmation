@@ -6,7 +6,7 @@ import { fadeIn, fadeInUp, staggerContainer } from '../motion/animation'
 
 const Hero = () => { 
   return (
-    <section className='max-lg:py-20'>
+    <section className='max-lg:py-20' id='home'>
         <motion.div 
             variants={staggerContainer} 
             initial= 'hidden'

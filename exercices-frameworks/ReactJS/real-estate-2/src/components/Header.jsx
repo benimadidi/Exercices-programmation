@@ -29,7 +29,7 @@ const Header = () => {
                 <ul className='text-center space-y-3.5 text-lg'>
                     {navItems.map((item) => (
                         <li key={item.id}>
-                            <a href={item.href} className='hover:text-white transition'>{item.label}</a>
+                            <a href={item.href} onClick={handleClick} className='hover:text-white transition'>{item.label}</a>
                         </li>
                     ))}
                 </ul>

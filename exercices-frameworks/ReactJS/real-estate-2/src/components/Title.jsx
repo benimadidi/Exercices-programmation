@@ -13,9 +13,7 @@ const Title = ({title, text, link}) => {
         </div>
 
         {/* button */}
-        <button className="primary-btn">
-            {link}
-        </button>
+        {link && <button className="primary-btn">{link}</button>}
     </div>
   )
 }

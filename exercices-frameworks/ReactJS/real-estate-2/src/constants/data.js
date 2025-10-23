@@ -260,12 +260,13 @@ export const testimonialsItems = [
     residential: "USA, Nevada",
   },
   {
-    id: 4,
-    title: "Un service exceptionnel!",
-    text: "Notre expérience avec Estatein a été exceptionnelle. Le dévouement et le professionnalisme de leur équipe ont facilité la recherche de la maison de nos rêves. Nous la recommandons vivement !",
-    name: "Wade Warren",
-    residential: "USA, California",
-  },
+  id: 4,
+  title: "Un service irréprochable !",
+  text: "Notre expérience avec Estatein a été tout simplement incroyable. Grâce au professionnalisme et à l’écoute de leur équipe, nous avons trouvé la maison parfaite sans stress. Je recommande vivement leurs services !",
+  name: "Wade Warren",
+  residential: "Californie, États-Unis",
+},
+
 ];
 
 export const footerItems = [

@@ -5,7 +5,7 @@ import { RiArrowRightUpLine } from '@remixicon/react'
 const Cards = () => {
   return (
     <section>
-        <div className="container grid gap-2.5 border-y border-gray-15 py-3 rounded-2xl lg:grid-cols-4 grid-cols-2">
+        <div className="container grid gap-2.5 border-y border-gray-15 py-3 rounded-2xl lg:grid-cols-4 grid-cols-2 lg:mt-5">
             {CardsItems.map((item) => (
                 //Carte
                 <div className='bg-gray-10 ring ring-gray-15 rounded-xl px-3.5 py-4' key={item.id}>

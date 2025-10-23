@@ -14,9 +14,10 @@ const Featured = () => {
         <div className='container'>
             {/* titre */}
             <Title title="Propriétés à la une" text="Découvrez notre sélection de propriétés à la une. Chaque annonce offre un aperçu des maisons et des investissements exceptionnels disponibles sur Estatein. Cliquez sur « Voir les détails » pour plus d'informations." link="Voir toutes les propriétés"/>
-            {/* enveloppe carte */}
+            {/* wrapper de la carte */}
             <Swiper
                 modules={[Navigation, Autoplay]}
+                loop= {true}
                 spaceBetween={30}
                 navigation={{
                     nextEl: ".next-btn",

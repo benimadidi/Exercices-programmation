@@ -6,6 +6,7 @@ import Featured from './components/Featured'
 import HowItWorks from './components/HowItWorks'
 import Testimonials from './components/Testimonials'
 import CallToAction from './components/CallToAction'
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Testimonials />
         <CallToAction />
       </main>
+      <Footer />
 
     </>
   )

@@ -272,89 +272,51 @@ export const testimonialsItems = [
 export const footerItems = [
   {
     id: 1,
-    title: "Home",
+    title: "Accueil",
     links: [
-      {
-        label: "Hero Section",
-      },
-      {
-        label: "Features",
-      },
-      {
-        label: "Properties",
-      },
-      {
-        label: "Testimonials",
-      },
-      {
-        label: "FAQ’s",
-      },
+      { label: "Section d’accueil" },
+      { label: "Fonctionnalités" },
+      { label: "Propriétés" },
+      { label: "Témoignages" },
+      { label: "FAQ" },
     ],
   },
   {
     id: 2,
-    title: "About Us",
+    title: "À propos",
     links: [
-      {
-        label: "Our Story",
-      },
-      {
-        label: "Our Works",
-      },
-      {
-        label: "How It Works",
-      },
-      {
-        label: "Our Team",
-      },
-      {
-        label: "Our Clients",
-      },
+      { label: "Notre histoire" },
+      { label: "Nos réalisations" },
+      { label: "Comment ça marche" },
+      { label: "Notre équipe" },
+      { label: "Nos clients" },
     ],
   },
   {
     id: 3,
-    title: "Properties",
+    title: "Propriétés",
     links: [
-      {
-        label: "Portfolio",
-      },
-      {
-        label: "Categories",
-      },
+      { label: "Portefeuille" },
+      { label: "Catégories" },
     ],
   },
   {
     id: 4,
     title: "Services",
     links: [
-      {
-        label: "Valuation Mastery",
-      },
-      {
-        label: "Strategic Marketing",
-      },
-      {
-        label: "Negotiation Wizardry",
-      },
-      {
-        label: "Closing Success",
-      },
-      {
-        label: "Property Management",
-      },
+      { label: "Expertise en évaluation" },
+      { label: "Marketing stratégique" },
+      { label: "Négociation professionnelle" },
+      { label: "Accompagnement jusqu’à la clôture" },
+      { label: "Gestion immobilière" },
     ],
   },
   {
     id: 5,
-    title: "Contact Us",
+    title: "Contact",
     links: [
-      {
-        label: "Contact Form",
-      },
-      {
-        label: "Our Offices",
-      },
+      { label: "Formulaire de contact" },
+      { label: "Nos bureaux" },
     ],
   },
 ];

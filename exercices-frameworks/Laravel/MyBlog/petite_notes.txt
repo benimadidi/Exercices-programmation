@@ -1,0 +1,21 @@
+Petit rappel : le nom d'une migration doit etre au pluriel
+
+Lorsqu'on cree un model, en mettant le : -mc, il cree aussi le controller
+
+Dans le model :
+    $appends
+    - Ajoute des attributs calculés au modèle (pas dans la bdd)
+    - Ex : protected $appends = ['is_liked','likes_count'];
+    - Correspond aux méthodes getIsLikedAttribute(), getLikesCountAttribute() qui sont des accesseurs
+    - Utile pour JSON/API ou Blade
+
+    $with
+    - Charge automatiquement une relation
+    - Ex : protected $with = ['likedBy'];
+    - Évite le N+1 problem, optimise les requêtes
+    - Utile avec $appends pour calculer des valeurs liées aux relations
+
+
+la methode abort : permet de renvoyer une erreur http 
+
+Avec la methode validate, mimes permet de limiter le type de fichier que l'on peut uploader

@@ -24,10 +24,10 @@ Route::middleware(['auth', 'verified'])->group(function ()
 Route::get('post/{post}', [PostController::class, 'show'])->name('post.show');
 
 Route::get('/dashboard', function () {
-    return Inertia::render('dashboard', [
+    return Inertia::render('Dashboard', [
         'usersPosts' => Auth::user()->posts()->with('author')->latest()->get()
     ]);
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
-require __DIR__.'/settings.php';
+require __DIR__.'/auth.php';

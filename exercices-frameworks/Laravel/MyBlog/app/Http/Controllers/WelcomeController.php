@@ -9,7 +9,6 @@ use Inertia\Response;
 
 class WelcomeController extends Controller
 {
-
     public function index() : Response
     {
 

@@ -1,3 +1,16 @@
+On peut aussi installer en faisant : 
+    - composer create-project laravel/laravel myblog : installe laravel
+    - composer require laravel/breeze --dev : 
+        Installe Laravel Breeze en tant que dépendance de
+        développement, ajoutant le package à require-dev et
+        téléchargeant le scaffolding d'authentification.
+    - php artisan breeze:install 
+
+NB : c'est pour si l'on veut utiliser jsx
+
+
+
+
 Petit rappel : le nom d'une migration doit etre au pluriel
 
 Lorsqu'on cree un model, en mettant le : -mc, il cree aussi le controller

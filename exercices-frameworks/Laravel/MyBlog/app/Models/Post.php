@@ -36,7 +36,7 @@ class Post extends Model
     public function likedBy() : BelongsToMany
     {
 
-        return $this->belongsToMany(User::class, 'post_likes');
+        return $this->belongsToMany(User::class, 'likes');
 
     }
 

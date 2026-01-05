@@ -1,6 +1,6 @@
 On peut aussi installer en faisant : 
     - composer create-project laravel/laravel myblog : installe laravel
-    - composer require laravel/breeze --dev : 
+    - se placer dans myblog puis : composer require laravel/breeze --dev : 
         Installe Laravel Breeze en tant que dépendance de
         développement, ajoutant le package à require-dev et
         téléchargeant le scaffolding d'authentification.
@@ -8,12 +8,20 @@ On peut aussi installer en faisant :
 
 NB : c'est pour si l'on veut utiliser jsx
 
-
+--------------------------------------------------------------------------------------------------------------
 
 
 Petit rappel : le nom d'une migration doit etre au pluriel
 
+
+--------------------------------------------------------------------------------------------------------------
+
+
 Lorsqu'on cree un model, en mettant le : -mc, il cree aussi le controller
+
+
+--------------------------------------------------------------------------------------------------------------
+
 
 Dans le model :
     $appends
@@ -28,7 +36,45 @@ Dans le model :
     - Évite le N+1 problem, optimise les requêtes
     - Utile avec $appends pour calculer des valeurs liées aux relations
 
+--------------------------------------------------------------------------------------------------------------
+
 
 la methode abort : permet de renvoyer une erreur http 
 
+
+--------------------------------------------------------------------------------------------------------------
+
+
 Avec la methode validate, mimes permet de limiter le type de fichier que l'on peut uploader
+
+
+--------------------------------------------------------------------------------------------------------------
+# À quoi sert useForm ?
+
+useForm est un hook d’Inertia qui sert à **gérer facilement l’état d’un formulaire** côté React
+et à **envoyer les données au backend Laravel** sans recharger la page.  
+Il gère aussi :
+- la saisie des champs
+- l’état de traitement (processing)
+- les erreurs de validation côté serveur
+- la réinitialisation des champs
+
+# Exemple d’utilisation
+import { useForm } from '@inertiajs/react';
+
+const { data, setData, post, processing, errors } = useForm({
+    title: '',
+    content: '',
+});
+
+<form onSubmit={e => { e.preventDefault(); post(route('post.store')) }}>
+    <input value={data.title} onChange={e => setData('title', e.target.value)} />
+    <textarea value={data.content} onChange={e => setData('content', e.target.value)} />
+    <button disabled={processing}>Envoyer</button>
+</form>
+
+# Points clés
+- post/put/patch/delete : envoient les données au serveur via Inertia
+- errors : contient les erreurs de validation Laravel
+- reset() : réinitialise le formulaire
+- processing : true si la requête est en cours

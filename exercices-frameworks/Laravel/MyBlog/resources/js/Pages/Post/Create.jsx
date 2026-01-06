@@ -19,7 +19,7 @@ export default function Create({}) {
     }
   );
 
-  const [previewUrl, setPreviewUrl] = useState(null);
+  const [previewUrl, setPreviewUrl] = useState('');
 
 const handleImageChange = (e) => 
   {
@@ -47,7 +47,7 @@ const handleImageChange = (e) =>
 
     e.preventDefault();
 
-    post(route('post.store'), 
+    post(route('post.store', post.id), 
     {
 
       onSuccess: () => 

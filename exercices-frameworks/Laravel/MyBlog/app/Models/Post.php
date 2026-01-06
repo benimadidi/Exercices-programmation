@@ -14,7 +14,7 @@ class Post extends Model
     protected $fillable = 
     [
         'title',
-        'content',
+        'description',
         'user_id'
     ];
 
@@ -24,12 +24,14 @@ class Post extends Model
         'likes_count'
     ];
 
-    protected $with = ['likedBy'];
+    protected $with = ['likedBy', 'author'];
 
     public function author() : BelongsTo
     {
 
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id')->withDefault([
+            'name' => '(Utilisateur supprimé)'
+        ]);
 
     }
 

@@ -36,6 +36,7 @@ Dans le model :
     - Évite le N+1 problem, optimise les requêtes
     - Utile avec $appends pour calculer des valeurs liées aux relations
 
+
 --------------------------------------------------------------------------------------------------------------
 
 
@@ -46,6 +47,55 @@ la methode abort : permet de renvoyer une erreur http
 
 
 Avec la methode validate, mimes permet de limiter le type de fichier que l'on peut uploader
+
+--------------------------------------------------------------------------------------------------------------
+
+
+INERTIA – router (note rapide)
+
+Le router d’Inertia sert à envoyer des requêtes HTTP (GET, POST, PUT, DELETE)
+vers Laravel SANS recharger la page, comme une SPA.
+
+Import :
+import { router } from '@inertiajs/react';
+
+Méthodes principales :
+
+router.get(url, data?, options?)
+→ naviguer vers une page (équivalent d’un lien)
+
+router.post(url, data, options)
+→ envoyer un formulaire (store, like, etc.)
+
+router.put(url, data, options)
+router.patch(url, data, options)
+→ mise à jour (edit / update)
+
+router.delete(url, options)
+→ suppression (delete)
+
+Exemples :
+
+router.post(route('post.like', postId));
+→ envoie une requête POST à Laravel
+
+router.delete(route('post.destroy', postId));
+→ supprime un post sans recharger la page
+
+Options utiles :
+- preserveScroll: true → garde la position du scroll
+- preserveState: true → garde l’état React
+- onSuccess() → après succès
+- onError() → en cas d’erreur
+
+Important :
+- router ≠ fetch / axios
+- router travaille avec Laravel + routes nommées
+- Laravel répond avec Inertia::render()
+
+En résumé :
+router = le pont entre React et Laravel
+
 
 
 --------------------------------------------------------------------------------------------------------------
@@ -78,3 +128,16 @@ const { data, setData, post, processing, errors } = useForm({
 - errors : contient les erreurs de validation Laravel
 - reset() : réinitialise le formulaire
 - processing : true si la requête est en cours
+
+
+--------------------------------------------------------------------------------------------------------------
+
+LARAVEL – php artisan storage:link (note rapide)
+
+Cette commande crée un lien symbolique entre :
+storage/app/public  →  public/storage
+
+Pourquoi ?
+- Les fichiers uploadés (images, pdf, etc.) sont stockés dans storage
+- Le dossier storage n’est PAS accessible depuis le navigateur
+- public/ est le seul dossier accessible publiquement

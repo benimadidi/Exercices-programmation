@@ -1,7 +1,7 @@
 import { Button } from '@/Components/ui/button';
-import { Card, CardContent } from '@/Components/ui/card';
-import { router, usePage } from '@inertiajs/react'
-import { Eye, Heart, Trash2 } from 'lucide-react';
+import { Card, CardContent, CardFooter, CardHeader } from '@/Components/ui/card';
+import { Link, router, usePage } from '@inertiajs/react'
+import { Edit, Edit2, Eye, Heart, Trash, Trash2 } from 'lucide-react';
 import React, { useState } from 'react'
 
 export default function ListPost({posts, showAuthor = true}) {
@@ -65,11 +65,11 @@ export default function ListPost({posts, showAuthor = true}) {
                     (
                         <Card  key={post.id} className="overflow-hidden">
 
-                            {post.image && 
+                            {post.image_url && 
 
                                 (
-                                    <div className="aspect-w-16 aspect-h-9">
-                                        <img src={`/storage/${post.image}`} alt={post.title} className='object-cover w-full h-48' />
+                                    <div className="aspect-[16/9] ">
+                                        <img src={`/storage/${post.image_url}`} alt={post.title} className='object-cover w-full h-48' />
                                     </div>
                                 )
 
@@ -114,6 +114,7 @@ export default function ListPost({posts, showAuthor = true}) {
                                         </Link>
 
                                     </Button>
+
                                     { canEditPost(post) && 
                                     (
 
@@ -127,8 +128,8 @@ export default function ListPost({posts, showAuthor = true}) {
 
                                             </Button>
 
-                                            <Button variant="ghost" asChild className='text-red-600 hover:text-red-700' onClick={() => handleDelete(post.id)} disabled={deletingId === post.id}>
-                                                <Trash2 />
+                                            <Button variant="ghost" className='text-red-600 hover:text-red-700' onClick={() => handleDelete(post.id)} disabled={deletingId === post.id}>
+                                                <Trash />
                                             </Button>
 
 
